@@ -1,0 +1,32 @@
+Exception in NSApplicationAWT:
+ *** -[__NSPlaceholderArray initWithObjects:count:]: attempt to insert nil object from objects[1]
+0   CoreFoundation                      0x00000001924443e8 __exceptionPreprocess + 176
+1   libobjc.A.dylib                     0x0000000191f8eea8 objc_exception_throw + 60
+2   CoreFoundation                      0x0000000192529c94 -[__NSCFString characterAtIndex:].cold.1 + 0
+3   CoreFoundation                      0x0000000192526b94 -[__NSPlaceholderArray initWithCapacity:].cold.1 + 0
+4   CoreFoundation                      0x000000019234be4c -[__NSPlaceholderArray initWithObjects:count:] + 252
+5   CoreFoundation                      0x0000000192373af8 -[NSArray initWithArray:range:copyItems:] + 368
+6   CoreFoundation                      0x00000001923a4c78 +[NSArray arrayWithArray:] + 60
+7   WindowManagement                    0x0000000215cc648c -[WMClientWindowManager performWindowTransaction:] + 196
+8   AppKit                              0x0000000195fb0334 __54-[NSWMWindowCoordinator performTransactionUsingBlock:]_block_invoke + 32
+9   AppKit                              0x00000001957713d0 NSCGSTransactionRunPreCommitActionsForOrder_ + 240
+10  AppKit                              0x00000001957711bc NSCGSTransactionRunPreCommitActions_ + 220
+11  AppKit                              0x0000000195fb5e08 __39+[_NSCGSTransaction currentTransaction]_block_invoke.16 + 48
+12  QuartzCore                          0x0000000199a5f95c _ZN2CA11Transaction19run_commit_handlersE18CATransactionPhase + 120
+13  QuartzCore                          0x0000000199be1934 _ZN2CA7Context18commit_transactionEPNS_11TransactionEdPd + 4600
+14  QuartzCore                          0x0000000199a5e818 _ZN2CA11Transaction6commitEv + 652
+15  AppKit                              0x00000001956911e0 NSPerformVisuallyAtomicChange + 120
+16  AppKit                              0x0000000195e3019c -[NSWindow _reallyDoOrderWindowOutRelativeTo:] + 488
+17  AppKit                              0x0000000195e304e8 -[NSWindow _reallyDoOrderWindow:] + 80
+18  AppKit                              0x0000000195e30738 -[NSWindow _doOrderWindow:] + 264
+19  AppKit                              0x0000000195e2c434 -[NSWindow _finishClosingWindow] + 236
+20  AppKit                              0x00000001958dc9dc -[NSWindow _close] + 276
+21  libjcef.dylib                       0x0000000374d9597c _ZN13TempWindowMacD1Ev + 40
+22  libjcef.dylib                       0x0000000374d7a038 _ZN7Context7DestroyEv + 48
+23  ???                                 0x00000002800099b0 0x0 + 10737457584
+24  ???                                 0x000000028000600c 0x0 + 10737442828
+25  ???                                 0x000000028000600c 0x0 + 10737442828
+26  ???                                 0x000000028000657c 0x0 + 10737444220
+27  ???                                 0x000000028000600c 0x0 + 10737442828
+28  ???                                 0x000000028000600c 0x0 + 10737442828
+29  ???                                 0x0000000291bbcf80 0x0 + 11034939264
